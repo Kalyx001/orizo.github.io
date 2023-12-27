@@ -1,0 +1,281 @@
+/* Basic styles, customize as needed */
+/* Global Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(45deg, #f2f2f2, #FFFFFF);
+  padding: 20px;
+}
+
+.logo img {
+  height: 100px;
+  top: 20px;
+  border: 1px orange solid;
+  border-radius: 50%;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: .3s;
+}
+.menu li a:hover{
+    color: orange;
+    letter-spacing: 1.5px;
+    border: 1px orange solid;
+    border-radius: 10px;
+}
+
+.menu li:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+    width: 170px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  background-color: #F2F2F2;
+  padding: 10px;
+  z-index: 1;
+  transition: .3s;
+}
+
+.dropdown-menu li {
+  display: block;
+  transition: .2s;
+}
+.dropdown-menu li:hover{
+    color: yellow;
+}
+
+.dropdown-menu li a {
+  padding: 5px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #ddd;
+}
+
+.search-bar {
+  margin-top: 20px;
+  width: 70%;
+  height: 30px;
+  display: flex;
+}
+
+.search-bar input[type="text"] {
+  padding: 0px;
+  flex: 1;
+}
+
+.search-bar button {
+    height: 30px;
+    margin-left: 2px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  display: inline;
+  width: 100%;
+}
+
+.advertisement-gallery {
+  position: relative;
+  max-width: 100%;
+  overflow: hiden;
+}
+
+.advertisement-gallery img {
+  display: none;
+  object-fit: cover;
+  width: 100%;
+  height: 35%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.advertisement-gallery img:first-child {
+  display: block;
+}
+
+
+.products {
+  display: flex;
+  width: 200px;
+  
+}
+product {
+    display: flex;
+}
+.img-box img{
+    width: 100%;
+    
+}
+
+.product-card {
+  border: 2px solid #yellow;
+  padding: 100px;
+  align-self: center;
+  justify-content: center;
+}
+h3, h2{
+    color: #645800;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: #780047;
+    text-align: center;
+    
+}
+button {
+    height: 40px;
+    width: auto;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid Orange;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat;
+    grid-gap: 1%;
+}
+
+.box{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0;
+    height: auto;
+    box-shadow: 0px 0px 3px;
+}
+
+.img-box{
+    width: 100%;
+    height: ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+.aside{
+    width: ;
+    height: auto;
+    background-color: black;
+}
+
+.cart{
+    width: 100%;
+        margin-top: 60%;
+    position: absolute;
+    display: inline;
+    background-color: white
+    justify-content: center;
+    border-radius: 3px;
+    width: x;
+    
+}
+.cart p {
+    height: 22px;
+    width: auto;
+    align-items: center;
+    border-radius: 1px;
+    justify-content: center;
+    color: white;
+    background-color: Orange;
+}
+.sidebar{
+    width: 40%;
+    background-color: white;
+    
+}
+aside h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #FF8700;
+    margin-top: ;
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    background: #FFFE8A;
+}
+aside ul{
+    display: inline;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: ;
+  padding: 14px;
+  text-align: center;
+  bottom: 5px;
+  width: 10%;
+  margin-top: 9%;
+  width: auto;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-info p,
+.footer-info a {
+  color: #fff;
+  margin: 0 5px;
+}
