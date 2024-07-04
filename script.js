@@ -103,7 +103,7 @@ function orderViaWhatsApp(productId) {
   const productToOrder = products.find(product => product.id === productId);
 
   // Replace 'XXXXXXXXXXXX' with your actual WhatsApp number
-  const whatsappNumber = '+254741766185';
+  const whatsappNumber = '+254115900068';
   const message = `Hi, I'd like to order ${productToOrder.name} (ID: ${productToOrder.id}).`;
 
   const encodedMessage = encodeURIComponent(message);
